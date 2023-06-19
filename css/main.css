@@ -1,0 +1,322 @@
+/* 공통UI */
+.headline{
+ font-size: 5rem;
+ font-weight: 600;
+ line-height: 120%;
+}
+.comment {
+ font-size: 1.4rem;
+ line-height: 160%;
+}
+
+/* 표지 */
+.MainVisual {height: 100vh; overflow: hidden;}
+.section1 {
+ padding-top: 100px;
+ width: 100%;
+ height: 100%;
+ background-image: url(../images/Main.jpg), url(../images/snowcrystals.jpg);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ mix-blend-mode: multiply;
+ position: relative;
+ /* filter: brightness(80%); */
+}
+.title {
+ font-size: 15rem;
+ position: absolute;
+ top:38vh;
+ left: 700px;
+ font-weight: 700;
+ opacity: 0;
+ color: white;
+ mix-blend-mode: overlay;
+}
+
+/* 브랜드 간략소개 */
+.BRAND {
+ height: 600px;
+ /* border: solid 1px blue; */
+ padding: 200px 150px 300px 150px;
+ position: relative;
+}
+.section2{
+ position: absolute;
+ top:34vh;
+ left: 300px;
+ transition: all 0.5s ease-in-out;
+}
+.section3{
+ /* border: solid 1px blue; */
+ position: absolute;
+ right: 300px;
+ top: 34vh;
+ width: 600px;
+ transition: all 0.5s ease-in-out;
+}
+.accent {
+ font-size: 3rem;
+ font-weight: 700;
+ color: #ff369b;
+ margin-bottom: 70px;
+}
+
+/* 스토리 */
+.STORY {
+ height: 2300px;
+ /* border: solid 1px blue; */
+ padding: 0px 150px 100px 150px;
+ position: relative;
+}
+.circle {
+ width: 20px;
+ height: 20px;
+ border-radius: 50%;
+ background-color: black;
+ margin: auto;
+ position: absolute;
+ top: 400px;
+ margin-left: 49.5%;
+ left: -8px;
+ /* opacity: 0; */
+ transition: all 0.3s ease-in-out;
+ animation: none;
+ position: sticky;
+}
+@keyframes wave1 {
+ from { scale: 0%; opacity: 0; }
+ 80% { scale: 200%; opacity: 1;}
+ to { scale: 100%; opacity: 1;}
+ }
+.circle.animate {
+  animation: wave1 0.8s ease-in-out;
+}
+
+.line {
+ width: 3px;
+ height: 1900px;
+ background-color: black;
+ margin: auto;
+ position: absolute;
+ top: 400px;
+ left: 50%;
+ opacity: 0;
+ transition: opacity 1.5s ease, height 0.5s ease;
+ /* position: sticky; */
+}
+.container {
+ position: absolute;
+ top: 700px;
+ height: 1500px;
+ display: flex;
+ justify-content: space-around;
+ flex-direction: column;
+}
+.Smallheadline {font-weight: 600; font-size: 1.8rem; margin-bottom: 15px;}
+.Smallcomment {font-weight: 400; font-size: 1.2rem; line-height: 160%;}
+.TextBoxLeft1, .TextBoxLeft2, .TextBoxLeft3 {opacity: 0; text-align: right; width: 500px; margin-left: 130px; position: relative;}
+.TextBoxRight1, .TextBoxRight2, .TextBoxRight3 {opacity: 0; text-align: left; width: 500px; margin-left: 990px; position: relative;}
+.TextBoxLeft1::after { content: ''; position: absolute; width: 100px; height: 2px; right: -180px; top: 15px; background-color: black; }
+.TextBoxLeft2::after { content: ''; position: absolute; width: 100px; height: 2px; right: -180px; top: 15px; background-color: black; }
+.TextBoxLeft3::after { content: ''; position: absolute; width: 100px; height: 2px; right: -180px; top: 15px; background-color: black; }
+.TextBoxRight1::after { content: ''; position: absolute; width: 100px; height: 2px; left: -180px; top: 15px; background-color: black; }
+.TextBoxRight2::after { content: ''; position: absolute; width: 100px; height: 2px; left: -180px; top: 15px; background-color: black; }
+.TextBoxRight3::after { content: ''; position: absolute; width: 100px; height: 2px; left: -180px; top: 15px; background-color: black; }
+
+
+/* 가치 */
+.VALUE {
+ background-color: rgb(255, 255, 255);
+ /* border: solid 1px blue; */
+ position: relative;
+}
+.BgText {
+ height: 1000px;
+ background-image: url(../images/BgText2.png);
+ background-repeat: no-repeat;
+ background-size: 150%;
+ background-position: center;
+ background-attachment: fixed;
+ padding: 100px 0;
+ text-align: center;
+ /* display: flex; */
+ /* justify-content: center; */
+ /* align-items: center; */
+}
+.BgText > h2 {
+ color: white;
+ position: sticky;
+ top: 450px;
+}
+.BgText2 {
+ opacity: 0;
+ transition: all 1s;
+ font-size: 7rem;
+}
+.vision {
+ height: 750px;
+ padding: 300px 300px 100px 300px;
+ position: relative;
+}
+.visionSet {
+ width: 600px;
+ /* display: flex;
+ justify-content: space-between; */
+ /* border: solid 1px red; */
+ overflow: hidden;
+}
+.imgSlider {
+ width: 1800px;
+ display: flex;
+ justify-content: space-between;
+}
+.visionimg {
+ width: 600px;
+ height: 470px;
+ justify-content: space-between;
+ /* border: solid 1px red; */
+ overflow: hidden;
+}
+.vimg {width: 600px;} 
+
+.visionText {position: absolute; top: 310px; width: 500px; right: 400px;}
+.btn {
+ width: 20px;
+ height: 20px;
+ background-color: rgb(207, 207, 207);
+ border-radius: 50%;
+ cursor: pointer;
+}
+.BtnBox {
+ position: absolute;
+ top: 740px;
+ left: 1025px;
+ width: 100px;
+ display: flex;
+ justify-content: space-between;
+}
+
+
+
+/* 상품 */
+.BEST {
+ background-color: white;
+ padding: 100px 150px 200px 150px;
+ position: relative;
+}
+.BestProducts {
+ /* border: solid 1px red; */
+ height: 800px;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-bottom: 100px;
+}
+/* .BestProducts > .headline {top: 10px;} */
+.TextSlideMenu {
+ width: 500px;
+ display: flex;
+ justify-content: space-between;
+ font-size: 1.3rem;
+ margin-top: 50px;
+}
+.imgSet {width: 600px; height: 550px; overflow: hidden;}
+.SetBox {width: 1800px; white-space: nowrap; display: flex; justify-content: space-between; }
+.imgBox {width: 600px; height: 550px;}
+.imgBox > img {width: 600px;}
+/* .BestProducts > .headline  */
+
+.BathBomb {
+ /* border: solid 1px blue; */
+ height: 700px;
+ position: relative;
+ overflow: hidden;
+}
+.Pcontainer { transition: transform 0.3s ease; width: 4950px; height: 100%; display: flex; justify-content: space-between;}
+.ProductsBox {position: relative;  width: 100%; float: left;}
+.Products {width: 700px; height: 700px; overflow: hidden; margin-left: 150px; position: absolute;}
+.Products > img {width: 100%;}
+.BtnLeft {
+ position: absolute;
+ top: 300px;
+ background-color: white;
+ border: 1px solid black;
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ z-index: 1;
+ cursor: pointer;
+}
+.BtnRight {
+ position: absolute;
+ top: 300px;
+ right: 0;
+ background-color: white;
+ border: 1px solid black;
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ z-index: 1;
+ cursor: pointer;
+}
+.name {
+ font-size: 3rem;
+ position: absolute;
+ top: 200px;
+ left: 850px;
+}
+.ProductsBox > .comment {
+ position: absolute;
+ top: 320px;
+ left: 850px;
+ width: 500px;
+}
+
+
+/* 스토어 */
+.STORE {
+ background-color: rgb(255, 255, 255);
+ /* border: solid 1px blue; */
+ /* padding: 100px 150px; */
+ position: relative;
+}
+.Shopimg {
+ height: 700px;
+ background-image: url(../images/Shop.png);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.Shopimg > .headline {
+ color: white;
+} 
+
+
+
+
+/* 푸터 */
+footer {
+ /* border: 2px solid green; */
+ box-sizing: border-box;
+ background-color: black;
+ width: 100%;
+ height: 200px;
+ color: white;
+ padding-left: 150px;
+ display: flex;
+ align-items: center;
+}
+.footer_content {
+ display: inline-block;
+ /* border: solid 1px black; */
+ width: 50%;
+ height: 60%;
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+}

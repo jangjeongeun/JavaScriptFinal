@@ -1,0 +1,65 @@
+html {font-size: 100%;}
+body {background-color: white; overflow-x: hidden; width: 100vw; font-family: 'Pretendard';}
+
+header {
+ /* border-bottom: 1px solid black; */
+ box-sizing: border-box;
+ height: 100px;
+ width: 100%;
+ /* background-color: rgba(255, 255, 255, 0.8); */
+ padding: 0 150px;
+ position: fixed;
+ justify-content: space-between;
+ align-items: center;
+ z-index: 1;
+ display: flex;
+ color: black;
+ transition: all 0.4s ease-in-out;
+}
+header:hover{
+ backdrop-filter: blur(10px);
+ background-color: rgba(0, 0, 0, 0.8);
+ color: white;
+}
+.logo {font-size: 2.5rem; font-weight: 900; letter-spacing: 1px; position: relative;}
+.logo::after{
+ content: 'Fresh Handmade Cosmetics';
+ font-size: 1rem;
+ letter-spacing: -0.4px;
+ font-weight: 400;
+ margin-left: 2px;
+}
+.navmenu {
+ display: inline-block;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 600px;
+ height: 50px;
+ font-size: 1.3rem;
+ font-weight: 400;
+ letter-spacing: -0.7px;
+}
+a:link {text-decoration: none; color: black; transition: all 0.3s ease-in-out;}
+a:visited{text-decoration: none; color: black;}
+a:hover{color: #ff2fbd;}
+/* a:active{} */
+header:hover a{
+ color: white;
+}
+main {
+ /* border: 2px solid blue; */
+ box-sizing: border-box;
+ width: 100%;
+ background-color: #F5F5F5;
+}
+
+/* aside {
+ width: 3px;
+ height: 70vh;
+ background-color: black;
+ position: fixed;
+ top: 15vh;
+ right: 150px;
+ z-index: 10;
+} */
